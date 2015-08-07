@@ -2,7 +2,7 @@
 #COPYRIGHT
 #CONTRIBUTING
 If you'd like to contribute:
-- Checkout the [issues](https://github.com/cldershem/$SOME_REPO/issues)
+- Checkout the [issues](https://github.com/cldershem/pinkhatbeard.com/issues)
     - Is it a known issue
     - Is someone else working on it?
     - Would it behoove the project to open an issue for discussion prior to working on it?

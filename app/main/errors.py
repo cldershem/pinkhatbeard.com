@@ -8,7 +8,7 @@ Default errors for the entire application unless overridden.
 
 :copyright: (c) 2015 by Cameron Dershem.
 :license: see TOPMATTER
-:source: github.com/cldershem/$SOME_REPO
+:source: github.com/cldershem/pinkhatbeard.com
 """
 from flask import render_template
 from . import main

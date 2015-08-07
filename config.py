@@ -8,7 +8,7 @@ Config for application.
 
 :copyright: (c) 2015 by Cameron Dershem.
 :license: see TOPMATTER
-:source: github.com/cldershem/$SOME_REPO
+:source: github.com/cldershem/pinkhatbeard.com
 """
 import secrets
 import os
@@ -18,7 +18,7 @@ BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config:
-    APP_NAME = "$SOME_APP_NAME"
+    APP_NAME = "pinkhatbeard"
     CSRF_ENABLED = True
     SECRET_KEY = secrets.SECRET_KEY
     MAIL_SERVER = 'smtp.googlemail.com'

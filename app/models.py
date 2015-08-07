@@ -8,7 +8,7 @@ DB models for application.
 
 :copyright: (c) 2015 by Cameron Dershem.
 :license: see TOPMATTER
-:source: github.com/cldershem/$SOME_REPO
+:source: github.com/cldershem/pinkhatbeard.com
 """
 from app import db, bcrypt
 import datetime
