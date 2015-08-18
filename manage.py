@@ -24,6 +24,8 @@ def run(environment='development'):
     """
     """
     app = create_app(environment)
+    if environment == 'production':
+        return app
     app.run()
 
 
@@ -34,6 +36,14 @@ def run_on_network(environment='development'):
     """
     app = create_app('development')
     app.run('0.0.0.0')
+
+
+@manager.command
+def run_production():
+    """
+    """
+    app = create_app('production')
+    return app
 
 
 @manager.command
