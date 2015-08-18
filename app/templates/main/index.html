@@ -7,50 +7,19 @@
     <tr>
       <th colspan="2">Contact:</th>
     </tr>
-    <tr>
-      <td>email:</td>
-      <td id='email'>
-        cldershem [at] gmail.com
-      </td>
-    </tr>
-    <tr>
-      <td>phone:</td>
-      <td>
-        <a href="tel:+013123610322">
-          +1.312.361.0322
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>github:</td>
-      <td>
-        <a href="http://github.com/cldershem">
-          github.com/cldershem
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>twitter:</td>
-      <td>
-        <a href="https://twitter.com/jerknextdoor">
-          @jerknextdoor
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>freenode:</td>
-      <td>
-        jerknextdoor
-      </td>
-    </tr>
-    <tr>
-      <td>resume:</td>
-      <td>
-        <a href="https://github.com/cldershem/Resume/blob/master/built/CameronDershemResume-Skills.pdf">
-          gitbhub.com/cldershem/resume
-        </a>
-      </td>
-    </tr>
+    {% for contact in contacts %}
+      <tr>
+        <td>{{contact.label}}:</td>
+        {% if contact.link %}
+          <td>
+            <a href={{contact.link}}>
+              {{contact.display}}
+            </a>
+          </td>
+        {% else %}
+          <td>{{contact.display}}</td>
+        {% endif %}
+    {% endfor %}
   </table>
 {% endblock %}
 {% block footer %}
