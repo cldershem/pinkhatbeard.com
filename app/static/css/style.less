@@ -1,3 +1,4 @@
+/* colors */
 @lightGreen: #68A869;
 @lightPink: #ffb6c1;
 @darkPink: #C69AA3;
@@ -6,15 +7,39 @@
 @darkestGrey: #252525;
 @darkRed: #C93A3A;
 
+/* defaults */
+@fontColor: @darkGrey;
+@linkColor: @lightPink;
+@linkHoveFontColor: @darkGrey;
+@linkHoveBackColor: @lightGrey;
+
+/* sizes */
 @screen-xs-max: 767px;
 @screen-sm-min: 768px;
 @screen-md-min: 992px;
 @screen-lg-min: 1200px;
 
-#header {
-  // background-color: @darkGrey;
-  // color: @darkGrey
+header {
+  a {
+    &:link, &:visited {
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
+
+#backToTop {
+  color: @darkPink;
+}
+
+h1 {
+    color: @fontColor;
+    text-decoration: none;
+}
+
 .table {
   width: auto;
 }
