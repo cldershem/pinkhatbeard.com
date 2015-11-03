@@ -19,7 +19,7 @@ from collections import namedtuple
 def get_contacts():
     Contact = namedtuple('Contact', 'label, display, link')
     list_of_contacts = [
-        Contact('email', 'cldershem [at] gmail.com', None),
+        Contact('email', 'cameron [at] pinkhatbeard.com', None),
         Contact('phone', '+1.312.361.0322', 'tel:+013123610322'),
         Contact('github', 'github.com/cldershem',
                 'http://github.com/cldershem'),
