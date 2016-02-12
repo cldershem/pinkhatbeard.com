@@ -25,7 +25,7 @@ class Config:
     MAIL_PORT = 465
     MAIL_USE_TLS = False
     MAIL_USE_SSL = True
-    MAIL_DEFAULT_SENDER = ('adamOwes', 'cldershem@gmail.com')
+    MAIL_DEFAULT_SENDER = ('pinkhatbeard', 'cldershem@gmail.com')
     MAIL_USERNAME = secrets.MAIL_USERNAME
     MAIL_PASSWORD = secrets.MAIL_PASSWORD
     CELERY_BROKER_URL = 'amqp://'

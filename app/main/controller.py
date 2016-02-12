@@ -29,6 +29,7 @@ def get_contacts():
                 'https://github.com/cldershem/Resume/' +
                 'blob/master/built/CameronDershemResume-Skills.pdf'),
         Contact('freenode', 'jerknextdoor', None),
+        Contact('keybase.io', 'cldershem', 'https://keybase.io/cldershem'),
         Contact('skype', 'cldershem', 'callto://cldershem'),
         Contact('google+', '+CameronDershem',
                 'http://google.com/+CameronDershem'),
