@@ -1,13 +1,13 @@
 [Unit]
-Description=uWSGI instance to server pinkhatbeard.com
+Description=uWSGI instance to serve pinkhatbeard.com
 After=network.target
 
 [Service]
 User=cldershem
-Group=nginx
+Group=www-data
 WorkingDirectory=/var/www/pinkhatbeard.com
 Environment="PATH=/home/cldershem/.venvs/pinkhatbeard.com/bin"
-ExecStart=/home/cldershem/.venvs/pinkhatbeard.com/bin/uwsgi --ini pinkhatbeard.ini
+ExecStart=/home/cldershem/.venvs/pinkhatbeard.com/bin/uwsgi --ini /var/www/pinkhatbeard.com/server/pinkhatbeard.ini
 
 [Install]
 WantedBy=multi-user.target
