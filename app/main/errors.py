@@ -19,7 +19,7 @@ def page_not_found(error):
     return render_template('errors/404.html',
                            adj1='human',
                            adj2='talented',
-                           adj3='might make mistakes')
+                           adj3='might make mistakes'), 404
 
 
 @main.app_errorhandler(500)
@@ -27,4 +27,4 @@ def internal_server_error(error):
     return render_template('errors/500.html',
                            adj1='human',
                            adj2='talented',
-                           adj3='might make mistakes')
+                           adj3='might make mistakes'), 500
