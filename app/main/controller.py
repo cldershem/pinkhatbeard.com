@@ -10,7 +10,7 @@ Main routes for application.
 :license: see TOPMATTER
 :source: github.com/cldershem/pinkhatbeard.com
 """
-from flask import render_template
+from flask import render_template, redirect
 from . import main
 import random
 from collections import namedtuple
@@ -61,3 +61,11 @@ def index():
                            adj2=adj2,
                            adj3=adj3,
                            contacts=get_contacts())
+
+
+@main.route('/pyvideo')
+@main.route('/pyvideo.org')
+@main.route('/savepyvideo')
+@main.route('/savepyvideo.org')
+def pyvideo():
+    return redirect('https://gitlab.com/cldershem/SavePyVideo.org')
