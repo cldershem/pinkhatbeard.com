@@ -68,4 +68,4 @@ def index():
 @main.route('/savepyvideo')
 @main.route('/savepyvideo.org')
 def pyvideo():
-    return redirect('https://gitlab.com/cldershem/SavePyVideo.org')
+    return redirect('https://gitlab.com/pinkhatbeard/SavePyVideo.org')
