@@ -10,7 +10,7 @@ Main routes for application.
 :license: see TOPMATTER
 :source: github.com/cldershem/pinkhatbeard.com
 """
-from flask import render_template, redirect
+from flask import render_template
 from . import main
 import random
 from collections import namedtuple
@@ -23,6 +23,10 @@ def get_contacts():
         Contact('phone', '+1.312.361.0322', 'tel:+013123610322'),
         Contact('github', 'github.com/cldershem',
                 'http://github.com/cldershem'),
+        Contact('gitlab', 'gitlab.com/cldershem',
+                'http://gitlab.com/cldershem'),
+        Contact('gitlab phb', 'gitlab.com/pinkhatbeard',
+                'http://gitlab.com/pinkhatbeard'),
         Contact('twitter', '@jerknextdoor',
                 'https://twitter.com/jerknextdoor'),
         Contact('resume', 'github.com/cldershem/resume',
@@ -31,9 +35,13 @@ def get_contacts():
         Contact('freenode', 'jerknextdoor', None),
         Contact('keybase.io', 'cldershem', 'https://keybase.io/cldershem'),
         Contact('skype', 'cldershem', 'callto://cldershem'),
+        Contact('linkedin', 'Cameron Dershem',
+                'https://www.linkedin.com/in/cameron-dershem-1462389'),
         Contact('google+', '+CameronDershem',
                 'http://google.com/+CameronDershem'),
         Contact('last.fm', 'cldershem', 'http://last.fm/user/cldershem'),
+        Contact('ttn', 'cldershem',
+                'https://www.thethingsnetwork.org/u/cldershem/'),
         ]
 
     return list_of_contacts
@@ -61,11 +69,3 @@ def index():
                            adj2=adj2,
                            adj3=adj3,
                            contacts=get_contacts())
-
-
-@main.route('/pyvideo')
-@main.route('/pyvideo.org')
-@main.route('/savepyvideo')
-@main.route('/savepyvideo.org')
-def pyvideo():
-    return redirect('https://gitlab.com/pinkhatbeard/SavePyVideo.org')
