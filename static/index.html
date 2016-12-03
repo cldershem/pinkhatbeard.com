@@ -9,6 +9,21 @@
   <link rel="shortcut icon" type="image/png" href="static/img/favicon.png" />
   <link rel="stylesheet/less" type="text/css" href="static/css/style.less" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+  <script type="text/javascript">
+    function get_random_adj() {
+      var list_o_adjs = [
+          "loud",
+          "glasses",
+          "talks a lot",
+          "likes bikes",
+          "long-haired",
+          "hair farmer",
+          "carries a purse",
+          ]
+      var index = Math.floor(Math.random() * list_o_adjs.length);
+      return list_o_adjs[index];
+    }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager -->
@@ -26,7 +41,7 @@
       <h1 id="name">Cameron Dershem</h1>
     </a>
     <h3 id="tagLine">
-      ...you know <span id="adj1">pink hat</span>, <span id="adj2">beard</span>, <span id="adj3">talks a lot</span>.
+      ...you know <span id="adj1">pink hat</span>, <span id="adj2">beard</span>, <span id="adj3"><script>document.write(get_random_adj());</script></span>.
     </h3>
   </header>
   <div id="mainContent">
