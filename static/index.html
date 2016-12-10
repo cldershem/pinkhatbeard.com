@@ -13,8 +13,8 @@
     // redirect to https
     var host = "www.pinkhatbeard.com";
     var protocol = "https:";
-    if (window.location.host != host) &&
-       (window.location.protocol != protocol) {
+    if ((window.location.host != host) ||
+       (window.location.protocol != protocol)) {
       window.location = "https://www.pinkhatbeard.com";
     }
   </script>
