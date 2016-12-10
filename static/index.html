@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>pinkhatbeard.com - Index</title>
-  <link rel="canonical" href="https://pinkhatbeard.com" />
+  <link rel="canonical" href="https://www.pinkhatbeard.com" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="shortcut icon" type="image/png" href="static/img/favicon.png" />
   <link rel="stylesheet/less" type="text/css" href="static/css/style.less" />
@@ -12,7 +12,9 @@
   <script type="text/javascript">
     // redirect to https
     var host = "pinkhatbeard.com";
-    if ((host == window.location.host) && (window.location.protocol != 'https:')) {
+    var www_host = "www." + host;
+    if ((host == window.location.host) && (window.location.protocol != 'https:') ||
+        (www_host == window.location.host) && (window.location.protocol != 'https:')) {
       window.location = window.location.toString().replace(/^http:/, "https:");
     }
   </script>
