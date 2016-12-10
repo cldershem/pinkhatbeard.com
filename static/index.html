@@ -11,11 +11,11 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
   <script type="text/javascript">
     // redirect to https
-    var host = "pinkhatbeard.com";
-    var www_host = "www." + host;
-    if ((host == window.location.host) && (window.location.protocol != 'https:') ||
-        (www_host == window.location.host) && (window.location.protocol != 'https:')) {
-      window.location = window.location.toString().replace(/^http:/, "https:");
+    var host = "www.pinkhatbeard.com";
+    var protocol = "https:";
+    if (window.location.host != host) &&
+       (window.location.protocol != protocol) {
+      window.location = "https://www.pinkhatbeard.com";
     }
   </script>
   <script type="text/javascript">
