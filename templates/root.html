@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block title %}{{ section.title }}{% endblock title %}
+
+{% block content %}
+  {{ macros::page_meta(page=section) }}
+
+  {{ section.content | safe }}
+{% endblock content %}

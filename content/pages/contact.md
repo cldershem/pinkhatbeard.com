@@ -2,7 +2,6 @@
 title = "contact"
 template = "page.html"
 +++
-
 <table class="table is-striped">
   <tbody>
 
@@ -24,5 +23,4 @@ template = "page.html"
   {{ contact(label="ttn", info="cldershem", link="https://www.thethingsnetwork.org/u/cldershem/") }}
 
   </tbody>
-
 </table>
