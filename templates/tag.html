@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}
+  {{ tag.name }}
+{% endblock title %}
+
+{% block content %}
+  <div class="box is-light-grey">
+    <h1 class="title is-1">{{ tag.name }}</h1>
+  </div>
+
+  <div class="list-posts">
+    {% for post in tag.pages %}
+      <div class="box is-light-grey">
+        <a href="{{ post.permalink }}">
+          <h2 class="title is-2">{{ post.title }}</h2>
+        </a>
+        <div class="level is-mobile">
+          <div class="level-left">
+            <div class="level-item">
+              published: {{ post.date }}
+            </div>
+          </div>
+          <div class="level-right">
+            <div class="level-item">
+              reading time: {{ post.reading_time }}
+            </div>
+          </div>
+        </div>
+        {% if post.tags %}
+          <span class="tags">
+            {% for tag in post.tags %}
+              <span class="tag"><a href="{{ get_url(path="tags") }}{{ tag | slugify }}">{{ tag }}</a></span>
+            {% endfor %}
+          </span>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+{% endblock content %}

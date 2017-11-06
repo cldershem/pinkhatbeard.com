@@ -1,0 +1,10 @@
+<tr>
+  <td>{{ label }}:</td>
+  <td>
+    {% if link %}
+      <a href="{{ link | safe }}">{{ info | safe }} </a>
+    {% else %}
+      {{ info }}
+    {% endif %}
+  </td>
+</tr>
