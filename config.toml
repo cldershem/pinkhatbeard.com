@@ -1,6 +1,5 @@
 # The URL the site will be built for
-# base_url = "https://pinkhatbeard.com"
-base_url = "https://cldershem.gitlab.io/testgutenberg"
+base_url = "https://pinkhatbeard.com"
 title = "phb"
 
 # Whether to automatically compile all Sass files in the sass directory
