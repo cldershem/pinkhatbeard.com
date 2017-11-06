@@ -1,0 +1,16 @@
+image: ubuntu:zesty
+
+pages:
+  stage: deploy
+  script:
+    - apt -qq update -y
+    - apt install -y wget
+    - wget -q http://github.com/Keats/gutenberg/releases/download/v0.2.2/gutenberg-v0.2.2-x86_64-unknown-linux-gnu.tar.gz
+    - tar -xvzf gutenberg-v0.2.2-x86_64-unknown-linux-gnu.tar.gz
+    - ./gutenberg build
+  artifacts:
+    paths:
+      - public
+    when: always
+  only:
+    - master
