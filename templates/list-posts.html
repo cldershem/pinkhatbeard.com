@@ -5,6 +5,12 @@
 {% endblock title%}
 
 {% block content %}
+  <div class="hero is-light-grey">
+    <div class="hero-body">
+      <h1 class="title is-1">posts</h1>
+    </div>
+  </div>
+
   <div class="list-posts">
     {% set posts = get_section(path="posts/_index.md") %}
     {% for post in posts.pages %}
