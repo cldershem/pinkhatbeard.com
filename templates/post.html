@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block title %}{{ page.title }}{% endblock title %}
+
+{% block content %}
+  {{ macros::post_meta(page=page) }}
+
+  {{ page.content | safe }}
+
+  {% if page.previous %}
+    <a href="{{ page.previous.permalink | safe }}" class="pagination-previous"><--- {{ page.previous.title }}</a>
+  {% endif %}
+  {% if page.next %}
+    <a href="{{ page.next.permalink | safe }}" class="pagination-next">{{ page.next.title }} ---></a>
+  {% endif %}
+
+{% endblock content %}

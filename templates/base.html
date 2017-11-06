@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ config.title }} - {% block title %}{% endblock title %}</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+  <link rel="stylesheet" href="{{ get_url(path="style.css") }}"/>
+  <link rel="icon" href="{{ get_url(path="img/favicon.png") }}">
+
+  <!-- <script type="text/javascript"> -->
+  <!--   // redirect to https -->
+  <!--   var host = "www.pinkhatbeard.com"; -->
+  <!--   var protocol = "https:"; -->
+  <!--   if ((window.location.host != host) || -->
+  <!--      (window.location.protocol != protocol)) { -->
+  <!--     window.location = "https://www.pinkhatbeard.com"; -->
+  <!--   } -->
+  <!-- </script> -->
+  <script type="text/javascript" src={{ get_url(path="js/app.js") }}></script>
+</head>
+
+<body>
+<!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MRQ6SZ"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MRQ6SZ');</script>
+<!-- End Google Tag Manager -->
+<div class="container">
+
+  <header id="header">
+    <nav class="navbar navbar-fixed is-pink-bg" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <div class="">
+          <h1 class="title is-3">
+            <a class="navbar-item" href="{{ get_url(path="/") }}">Cameron Dershem</a>
+          </h1>
+
+          <h6 id="tagline" class="subtitle is-6">
+            ...you know <span id="adj1">pink hat</span>, <span id="adj2">beard</span>, <span id="adj3"><script>document.write(get_random_adj());</script></span>. <!--<span id="tagline-tag"><script>document.write(get_random_tag());</script></span>. -->
+          </h6>
+        </div>
+
+        <button id="hamburger" class="button navbar-burger" data-target="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div id="nav-menu" class="navbar-menu navbar-end">
+        <a class="navbar-item" href="{{ get_url(path="pages/contact") }}">contact</a></li>
+        <!-- <a class="navbar-item" href="{{ get_url(path="pages/about") }}">about</a></li> -->
+        <a class="navbar-item" href="{{ get_url(path="posts") }}">blog</a></li>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="content">
+      {% block content %}
+      {% endblock content %}
+    </div>
+  </section>
+
+  <footer id="footer" class="footer">
+    <a href="#header" class="is-pink">
+      <span class="icon"><i class="fa fa-chevron-up"></i></i></span>
+    </a>
+    <div id="copyright" class="text-center">
+      Copyright <span class="icon"><i class="fa fa-copyright"></i></span> 2017  pinkhatbeard, llc.  All Rights Reserved.
+    </div><!-- end #copyright -->
+  </footer>
+
+  <div id="scripts">
+  </div>
+</div>
+</body>
+</html>
