@@ -12,6 +12,7 @@ function get_random_adj() {
   var index = Math.floor(Math.random() * list_o_adjs.length);
   return list_o_adjs[index];
 }
+
 function get_random_tag() {
   var list_o_tags = ["t1", "t2"];
   var index = Math.floor(Math.random() * list_o_tags.length);

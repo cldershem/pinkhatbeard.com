@@ -15,4 +15,3 @@ generate_rss = true
 
 [extra]
 # Put all your custom variables here
-taggers = ["1", "3"]

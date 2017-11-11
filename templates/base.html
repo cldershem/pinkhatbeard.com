@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ config.title }} - {% block title %}{% endblock title %}</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
   <link rel="stylesheet" href="{{ get_url(path="style.css") }}"/>
   <link rel="icon" href="{{ get_url(path="img/favicon.png") }}">
 
@@ -37,7 +37,7 @@
     <nav class="navbar navbar-fixed is-pink-bg" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <div class="">
-          <h1 class="title is-3">
+          <h1 class="title is-1">
             <a class="navbar-item" href="{{ get_url(path="/") }}">Cameron Dershem</a>
           </h1>
 
@@ -54,9 +54,9 @@
       </div>
 
       <div id="nav-menu" class="navbar-menu navbar-end">
-        <a class="navbar-item" href="{{ get_url(path="pages/contact") }}">contact</a></li>
-        <a class="navbar-item" href="{{ get_url(path="pages/talks") }}">talks</a></li>
-        <a class="navbar-item" href="{{ get_url(path="posts") }}">blog</a></li>
+        <a class="navbar-item" href="{{ get_url(path="pages/contact") }}">contact</a>
+        <a class="navbar-item" href="{{ get_url(path="pages/talks") }}">talks</a>
+        <a class="navbar-item" href="{{ get_url(path="posts") }}">blog</a>
       </div>
     </nav>
   </header>
@@ -70,7 +70,7 @@
 
   <footer id="footer" class="footer">
     <a href="#header" class="is-pink">
-      <span class="icon"><i class="fa fa-chevron-up"></i></i></span>
+      <span class="icon"><i class="fa fa-chevron-up"></i></span>
     </a>
     <div id="copyright" class="text-center">
       Copyright <span class="icon"><i class="fa fa-copyright"></i></span> 2017  pinkhatbeard, llc.  All Rights Reserved.
