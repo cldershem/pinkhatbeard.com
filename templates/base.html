@@ -11,12 +11,12 @@
 
   <script type="text/javascript">
     // redirect to https
-    var host = "www.pinkhatbeard.com";
-    var protocol = "https:";
-    if ((window.location.host != host) ||
-       (window.location.protocol != protocol)) {
-      window.location = "https://www.pinkhatbeard.com";
-    }
+    // var host = "www.pinkhatbeard.com";
+    // var protocol = "https:";
+    // if ((window.location.host != host) ||
+    //    (window.location.protocol != protocol)) {
+    //   window.location = "https://www.pinkhatbeard.com";
+    // }
   </script>
   <script type="text/javascript" src={{ get_url(path="js/app.js") }}></script>
 </head>
@@ -37,12 +37,12 @@
     <nav class="navbar navbar-fixed is-pink-bg" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <div class="">
-          <h1 class="title is-1">
+          <h1 class="title is-3">
             <a class="navbar-item" href="{{ get_url(path="/") }}">Cameron Dershem</a>
           </h1>
 
           <h6 id="tagline" class="subtitle is-6">
-            ...you know <span id="adj1">pink hat</span>, <span id="adj2">beard</span>, <span id="adj3"><script>document.write(get_random_adj());</script></span>. <!--<span id="tagline-tag"><script>document.write(get_random_tag());</script></span>. -->
+            ...you know <span id="adj1">pink hat</span>, <span id="adj2">beard</span>, <span id="adj3"><script>document.write(get_random_adj());</script></span>.
           </h6>
         </div>
 
