@@ -1,7 +1,7 @@
 +++
 title = "third post"
 template = "post.html"
-date = "2017-11-1"
+date = 2017-11-01
 tags = ["tacos", "not tacos"]
 +++
 # This would be another, another blog post.
